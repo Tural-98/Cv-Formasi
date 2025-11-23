@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CV Forması / Resume Form</title>
+<style>
+ body {
+   font-family: Arial, sans-serif;
+   background: #f2f2f7;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+ }
+ .container {
+   width: 900px;
+   background: #fff;
+   padding: 20px 40px;
+   margin: 20px 0;
+   border-radius: 15px;
+   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+ }
+ h2 {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ .photo-upload {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ .photo-upload img {
+   width: 140px;
+   height: 140px;
+   object-fit: cover;
+   border-radius: 10px;
+   border: 2px solid #ccc;
+ }
+ .grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+ }
+ label {
+   font-weight: bold;
+ }
+ input, select {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   margin-top: 5px;
+ }
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 10px;
+ }
+ table th, table td {
+   border: 1px solid #999;
+   padding: 8px;
+   text-align: center;
+ }
+ button {
+   margin-top: 20px;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 10px;
+   background: #007bff;
+   color: #fff;
+   cursor: pointer;
+   font-size: 16px;
+ }
+ button:hover {
+   background: #0056cc;
+ }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h2>CV Forması / Resume Form</h2>
+
+<div class="photo-upload">
+  <label>Şəkil Yükləyin / Upload Photo</label><br />
+  <input type="file" accept="image/*" onchange="previewPhoto(event)" />
+  <br /><br />
+  <img id="photoPreview" src="" alt="Şəkil / Photo" />
+</div>
+
+<div class="grid">
+ <div>
+   <label>Ad və Soyad / Full Name</label>
+   <input type="text" />
+ </div>
+ <div>
+   <label>Cinsiniz / Gender</label>
+   <select>
+     <option>Kişi / Male</option>
+     <option>Qadın / Female</option>
+   </select>
+ </div>
+
+ <div>
+   <label>Milliyət / Nationality</label>
+   <input type="text" />
+ </div>
+ <div>
+   <label>Anadan olduğunuz yer / Place of Birth</label>
+   <input type="text" />
+ </div>
+
+ <div>
+   <label>Ünvan / Address</label>
+   <input type="text" />
+ </div>
+ <div>
+   <label>Əlaqə nömrəsi / Contact Number</label>
+   <input type="text" />
+ </div>
+
+ <div>
+   <label>Ailə vəziyyəti / Marital Status</label>
+   <input type="text" />
+ </div>
+ <div>
+   <label>Ailə tərkibi / Family Members</label>
+   <input type="text" />
+ </div>
+
+ <div>
+   <label>Hərbi xidmət / Military Service</label>
+   <input type="text" />
+ </div>
+ <div>
+   <label>Qoşun növü / Military Branch</label>
+   <input type="text" />
+ </div>
+
+ <div>
+   <label>Şəxsiyyət vəsiqəsi (Seriya və №) / ID Card (Series & No)</label>
+   <input type="text" />
+ </div>
+ <div>
+   <label>Verilmə tarixi / Issue Date</label>
+   <input type="date" />
+ </div>
+</div>
+
+<br /><br />
+<h3>Təhsil Məlumatları / Education</h3>
+<table>
+<thead>
+<tr>
+ <th>Təhsil müəssisəsi / Institution</th>
+ <th>Daxil olduğunuz il / Start Year</th>
+ <th>Bitirdiyiniz il / End Year</th>
+</tr>
+</thead>
+<tbody>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+</tbody>
+</table>
+
+<br />
+<h3>İş təcrübəsi / Work Experience</h3>
+<table>
+<thead>
+<tr>
+ <th>Müəssisə / Company</th>
+ <th>Vəzifə / Position</th>
+ <th>Ünvan / Location</th>
+ <th>İş müddəti / Duration</th>
+ <th>Əmək haqqı / Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+</tbody>
+</table>
+
+<br />
+<h3>Dil bilikləri / Language Skills</h3>
+<table>
+<thead>
+<tr>
+ <th>Dil / Language</th>
+ <th>Yazmaq / Writing</th>
+ <th>Danışıq / Speaking</th>
+ <th>Oxumaq / Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Azərbaycan / Azerbaijani</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td>İngilis / English</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td>Rus / Russian</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+</tbody>
+</table>
+
+<br />
+<h3>Proqram bilikləri / Software Skills</h3>
+<table>
+<thead>
+<tr>
+ <th>Proqram / Software</th>
+ <th>Bilik səviyyəsi / Level</th>
+</tr>
+</thead>
+<tbody>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+</tbody>
+</table>
+
+<br />
+<label>Gözlənilən əmək haqqı / Expected Salary</label>
+<input type="text" />
+
+<br /><br />
+<p>Aşağıdakı imzamla bütün məlumatların düzgünlüyünü təsdiq edirəm / I confirm all the information is correct.</p>
+<p>İmza / Signature: ____________________  Tarix / Date: _____________</p>
+
+<button onclick="window.print()"> Print </button>
+
+</div>
+
+<script>
+function previewPhoto(event) {
+  const img = document.getElementById("photoPreview");
+  img.src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+</body>
+</html>
